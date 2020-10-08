@@ -17,7 +17,7 @@ module.exports = async (client, message,args, settings, save ) => {
             if(newSetting) {
                 if(client.channels.cache.find(r => r.name === newSetting)){
                     await client.updateGuild(message.guild , {logChannel: newSetting});
-                    return message.channel.send("New Log channel" + newSetting);   
+                    return message.channel.send("New Log channel " + newSetting);   
                 }     
             }
         }
