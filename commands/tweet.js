@@ -1,4 +1,4 @@
-const config = require('../sources/configTw.js');
+const config = require('../config.js');
 const { MessageEmbed } = require('discord.js');
 const Twit = require('twit');
 var T = new Twit(config);
