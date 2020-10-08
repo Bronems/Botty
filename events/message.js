@@ -14,6 +14,6 @@ module.exports = async (client, message) =>{
         message.channel.send("Command doens't exist !");
     }
 
-    const channel = client.channels.cache.find(r => r.name === "logs");
+    const channel = client.channels.cache.find(r => r.name === settings.logChannel);
     channel.send(message.author.username + " used the command : " + command);
 }

@@ -9,14 +9,10 @@ const guildSchema = mongoose.Schema({
         "type": String,
         "default": defaults.prefix
     },
-    welcomeChannel: {
+    logChannel: {
         "type": String,
-        "default": defaults.welcomeChannel
+        "default": defaults.logChannel
     },
-    welcomeChannel: {
-        "type": String,
-        "default": defaults.welcomeMessage
-    }
 });
  
 module.exports = mongoose.model("Guild", guildSchema);

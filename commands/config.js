@@ -8,10 +8,18 @@ module.exports = async (client, message,args, settings, save ) => {
         case "prefix" : {
             if(newSetting) {
                 await client.updateGuild(message.guild , {prefix: newSetting});
-                return message.channel.send('Prefix changed')
+                return message.channel.send('Prefix changed');
             }
             message.channel.send('Prefix : ' + settings.prefix);
             break;
+        }
+        case "logchannel" :{
+            if(newSetting) {
+                if(client.channels.cache.find(r => r.name === newSetting)){
+                    await client.updateGuild(message.guild , {logChannel: newSetting});
+                    return message.channel.send("New Log channel" + newSetting);   
+                }     
+            }
         }
     }
 }
