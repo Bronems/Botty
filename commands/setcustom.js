@@ -1,5 +1,6 @@
 module.exports = (client,message,args) =>{
-    client.user.setActivity(String(args), {type : 'LISTENING'});
+    args = args.join(' ');
+    client.user.setActivity(args, {type : 'LISTENING'});
         //ActivitySave(String(args));
 }
 
