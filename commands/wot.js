@@ -196,18 +196,6 @@ function showInfoVs(message, data1, data2){
                 data2.losses +  '\n' +
                 data2.tree +  '\n' 
                 , inline : true},
-
-                /*
-                { name: 'Clan :', value : data1.clan + '        ||      ' + data2.clan},
-                { name: 'Battles :', value : data1.battle + '       ||      ' + data2.battle},
-                { name: 'Frags :', value : data1.frags+ '       ||        ' + data2.frags},
-                { name: 'Enemy spotted :', value : data1.spotted+ '         ||      ' + data2.spotted},
-                { name: 'Shots :', value : data1.shots+ ' || ' + data2.shots},
-                { name: 'Max damages :', value : data1.max_damage + '        ||        ' + data2.max_damage},
-                { name: 'Max frags :', value : data1.max_frags + '      ||       ' + data2.max_frags},
-                { name: 'Wins :', value : data1.wins + '        ||         ' + data2.wins},
-                { name: 'Losses :', value : data1.losses + '        ||      ' + data2.losses },
-                { name: 'Tree cuted :', value : data1.tree+ '       ||        ' + data2.tree},*/
                 { name: 'Used by', value: userName},
             )
             .setFooter('Send by Botty : ' + date , 'https://static.ayana.io/avatar.png')
