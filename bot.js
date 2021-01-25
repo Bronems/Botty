@@ -18,6 +18,7 @@ client.commands.set("setavatar", require('./commands/setavatar'));
 client.commands.set("setcustom", require('./commands/setcustom.js'));
 client.commands.set("config", require('./commands/config.js'));
 client.commands.set("eval", require("./commands/eval.js"));
+client.commands.set("wot",require('./commands/wot.js'));
 
 client.on("ready", () => require("./events/ready.js")(client));
 client.on("message", msg => require("./events/message.js")(client, msg));
